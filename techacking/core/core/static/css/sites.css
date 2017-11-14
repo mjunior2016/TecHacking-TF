@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Verdana;
+    font-size: 15px;
+}
+header {
+    min-height: 60px;
+    position: fixed;
+    height:120px;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #ECECEC;
+}
+ul.topnav {
+    list-style-type: none;
+    margin-top: 80px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #483D8B;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 500px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+
+.logo{
+	float:left;
+	display:inline;
+	width: 0px;
+}
+
+.info {
+	display:inline-block;
+}
+.sup{
+	float:left;
+	margin-left:80px;
+	max-width: 500px;
+	display:inline;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+footer {
+	padding: 10px;
+	color: white;
+	background-color: #333;
+	text-align:center;
+}
+
+section {
+    margin: 50px;
+    margin-top: 100px;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+article {
+	margin: 5px;
+	padding: 2px;
+	background-color: white;
+}
+
+
+
+h1, h2, h3, h4, h5 {
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+	margin: 5px;
+}
+article a:visited {
+    color:#000000;
+}
+article a:hover {
+    color:#FF0000;
+}
+article a:link{
+    color:#FF006D;
+}
+article a:active{
+    color: #FF006D;
+}
+.logo img {
+	width: 60px;
+	padding:10px;
+}
+div img {
+    width: 600px;
+    padding: 60px;
+}
+
+section img{
+	width:20%;
+}
+
+ form {
+	 width:500px;
+	 margin: auto;
+
+ }
+ input {
+	 font-family: sans-serif;
+	 font-weight: normal;
+	 font-size: 13pt;
+
+ }
+
+ input:hover {
+	 background-color: #dddddd;
+
+ }
+ legend {
+	 color: #888888;
+	 font-weight: bold;
+	 font-size: 13pt;
+	 font-family: sans-serif;
+ }
+
+ fieldset {
+	 border-color: #cecece;
+	 margin: 20px;
+ }
+ fieldset#sexo {
+	 width: 150px;
+ }
+

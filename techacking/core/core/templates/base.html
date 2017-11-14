@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecHacking</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/csslocal.css' %}" />
+</head>
+<body>
+    <header>
+        <div  class='logo'>
+            <img src="static/media/logo.png" alt="Logo">
+        </div>
+        <div class="sup">
+            <h1>
+                TEC.HACKING
+            </h1>
+        </div>
+        <input type="checkbox" id="botao_menu">
+	    <label for="botao_menu">&#9776;</label>
+
+	    <nav class="menu">
+		    <ul>
+                <li><a href="index">Home</a></li>
+                <li><a href="cursosgraduacao">Graduação</a>
+				    <ul>
+					    <li><a href="sistemas.html">Sistemas </a></li>
+					    <li><a href="multimidia.html">Produção </a></li>
+					    <li><a href="redes.html">Redes</a></li>
+				    </ul>
+			    </li>
+                <li><a href="cursospos">Pós-Graduação</a></li>
+                <li><a href="cursoscertificacao">Certificação</a></li>
+                <li><a href="login.html">Login</a></li>
+    	    </ul>
+	    </nav>
+    </header>
+{% block content %}{% endblock %}
+    <hr>
+    <footer>
+            © TEC.HACKING - Todos os direitos reservados.
+    </footer>
+{% block scripts %}{% endblock %}
+
+</body>
+</html>
