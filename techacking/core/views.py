@@ -4,10 +4,24 @@ from django.shortcuts import render
 # Views - Basicamente é como uma função do Python
 
 def index (request):
-    return render(request,'index.html')
+    contexto = {
+        'cursos':[
+            'Desenvolvimento',
+            'Sistemas'
+        ],
+        'faculdade':' TECHACKING',
+        'titulo':'TECHACKING'
+
+
+    }
+    return render(request,'index.html',contexto)
 
 def cursospos (request):
-    return render(request, 'cursospos.html')
+    contexto = {
+        'titulo':'TecPos'
+
+    }
+    return render(request, 'cursospos.html', contexto)
 
 def cursoscertificacao (request):
     return render(request, 'cursoscertificacao.html')

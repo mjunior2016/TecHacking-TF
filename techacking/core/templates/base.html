@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="pt">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TecHacking</title>
-    {% load staticfiles %}
+    <title>{{ titulo }}</title>
     <link rel="stylesheet" href="{% static 'css/csslocal.css' %}" />
+
 </head>
 <body>
     <header>
@@ -38,7 +39,6 @@
                     </ul>
                 </li>
                 <li><a href="cursoscertificacao"> Certificação </a></li>
-                <li><a href="matriculese"> Matricule-se </a></li>
                 <li><a href="contato"> Contato </a></li>
                 <li class="right"><a href="login"> Login </a></li>
     	    </ul>
@@ -47,7 +47,7 @@
 {% block content %}{% endblock %}
     <hr>
     <footer>
-            © TEC.HACKING - Todos os direitos reservados.
+            © {{ faculdade }} - Todos os direitos reservados.
     </footer>
 {% block scripts %}{% endblock %}
 
