@@ -21,7 +21,7 @@ body {
 	width: 150px;
 	float: left;
 }
-.menu ul li.right {float: right;}
+
 .menu a {
 	padding: 15px;
 	display: block;
@@ -60,7 +60,7 @@ label[for="botao_menu"]{
 	text-align: center;
 	font-size: 30px;
 	cursor: pointer;
-	width: 50px;
+	width: 100%;
 	height: 50px;
 }
 #botao_menu{
@@ -75,6 +75,7 @@ label[for="botao_menu"]{
 	}
 	#botao_menu:checked ~ .menu{
 		margin-left: 0;
+		padding: 0;
 	}
 	.menu{
 		margin-top: 5px;
@@ -98,10 +99,10 @@ label[for="botao_menu"]{
 }
 
  a:hover {
-    background-color:black;
+    background-color:	#696969;
 }
  .menu ul ul a:hover {
- 	 background-color:black;
+ 	 background-color:	#A9A9A9;
  }
 
 .logo{
@@ -192,3 +193,21 @@ fieldset#sexo {
     width: 150px;
 }
 
+.main {
+	display:grid;
+	grid-template-areas: "col col col ";
+}
+.Gradua {
+	grid-area: col;
+	
+}
+.Pos{
+	grid-area: col;
+
+}
+.Certi{
+	grid-area: col;
+
+}
+a img {
+	width:100%;
