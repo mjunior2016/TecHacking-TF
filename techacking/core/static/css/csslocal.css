@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5 {
 }
 .logo img {
     width: 60px;
-    padding:10px;
+    
 }
 div img {
     width: 100%;
@@ -196,18 +196,30 @@ fieldset#sexo {
 .main {
 	display:grid;
 	grid-template-areas: "col col col ";
+	grid-template-columns: 1fr 1fr 1fr;
 }
-.Gradua {
+}
+.col2 {
 	grid-area: col;
 	
 }
-.Pos{
+.col2{
 	grid-area: col;
 
 }
-.Certi{
+.col3{
 	grid-area: col;
 
 }
+ 
+
 a img {
 	width:100%;
+	}
+
+.tabela {
+	border: 1px;
+	width: 100%;
+	font-size: 38px;
+
+}
