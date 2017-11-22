@@ -2,5 +2,23 @@
 
 {% block content %}
 
+<section>
+     <article>
+       <form  >
+         <fieldset ><legend>Contato</legend>
+            <p>Digite um e-mail para que possamos entrar em contato.</p>
+            <p><label >E-mail: </label>
+            <input type="email"  size="20" maxlength="40" placeholder="Digite um e-mail válido"/></p>
+            <p><label >Nome:</label>
+            <input type="text"  size="20" maxlength="40" Placeholder="Digite seu nome"/></p>
+            <p><label >Grau de urgência: </label>
+            Min<input type="range"/>Max
+            <p><label >Mensagem</label>
+            <textarea "cols="45" rows="5" Placeholder="Deixe aqui sua mensagem"></textarea></p>
+         </fieldset>
+         <input type="submit" value="Enviar" />
+       </form>
+     </article>
+    </section>
 
 {% endblock %}
